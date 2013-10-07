@@ -1,0 +1,17 @@
+<div class="center hero-unit">
+
+    <%provide(:title, 'Home')%>
+
+    <h1>
+        Welcome to CWSS 4get Ur Password Portal
+    </h1>
+        
+    <p>
+        In this portal, you can send a request to change your password. Click on any of the below to get started.
+    </p>
+
+    <%= link_to "Reset iMTL Password", submitrequest_path, class: "btn btn-large btn-primary"%>
+    <%= link_to "Reset Windows Login Password", '#', class: "btn btn-large btn-primary"%>
+    <%= link_to "Reset Google Password", '#', class: "btn btn-large btn-primary"%>
+    <%= link_to "Reset Ask 'N' Learn Password", '#', class: "btn btn-large btn-primary"%>
+</div>

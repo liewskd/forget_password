@@ -1,4 +1,14 @@
 ForgetPassword::Application.routes.draw do
+  get "i_mtl/submitRequest"
+    #  get "static_pages/home"
+    #get "static_pages/faq"
+  #get "static_pages/feedback"
+  
+  root 'static_pages#home'
+  match '/feedback', to: 'static_pages#feedback', via:'get'
+  match '/faq', to: 'static_pages#faq', via: 'get'
+  match '/submitrequest', to: 'i_mtl#submitRequest', via: 'get'
+  
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
